@@ -1,0 +1,26 @@
+<div class="row bg-primary">
+  <div class="col">
+    <div class="navbar navbar-dark">
+      <a class=" text-white" href="./">
+        <img
+          src="https://res.cloudinary.com/dvrkpcz4p/image/upload/v1592836675/de45fecc8ebb2ad9fa08c822e2bd8704_1_j1seqx.jpg"
+          class=" rounded-circle " alt="" height="70px" width="70px">
+
+      </a>
+    </div>
+  </div >
+  <div class="col-4 " style="padding: 13px;"> <a routerLink="/admin" class="btn btn-success" href="#"><i class="fa fa-user-circle mr-1"></i> Admin</a>
+  </div>
+  <div class="col-4 ">
+    <store-cartsummary></store-cartsummary>
+  </div>
+</div>
+<div class="row no-gutters">
+  <div class="col-3">
+    <store-categoryfilter></store-categoryfilter>
+  </div>
+  <div class="col">
+    <store-product-list></store-product-list>
+  </div>
+</div>
+<router-outlet></router-outlet>

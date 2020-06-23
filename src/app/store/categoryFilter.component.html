@@ -1,0 +1,12 @@
+<div class="m-1 col-form-label-sm" style="font-size: 13px; white-space: normal; ">
+  <button class="btn btn-outline-primary btn-block" style="font-size: 13px; white-space: normal; "
+          (click)="setCurrentCategory(null)">
+    All Categories
+  </button>
+  <button *ngFor="let category of categories" style="font-size: 13px; white-space: normal; "
+          class="btn btn-outline-primary btn-block"
+          [class.active]="currentCategory == category"
+          (click)="setCurrentCategory(category)">
+    {{category}}
+  </button>
+</div>

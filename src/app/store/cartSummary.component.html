@@ -1,0 +1,13 @@
+<div class="text-right p-1" style="margin: 8px;" >
+    <span *ngIf="itemCount > 0; else empty" class="badge badge-pill badge-warning nav-item" style="white-space: normal; margin: 2px;">
+         {{ itemCount }} item(s)  =  {{ totalPrice | currency:"USD":"symbol" }}
+    </span>
+    <button class="btn btn-warning" [disabled]="itemCount == 0" routerLink="/cart">
+               <i class="fa fa-shopping-cart" style="font-size: xxx-large;"></i>
+    </button>
+</div>
+<ng-template #empty>
+    <small class="">
+        (cart is empty)
+    </small>
+</ng-template>
